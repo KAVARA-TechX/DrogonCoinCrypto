@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44e526fc.chunk.css",
+    "main.js": "/static/js/main.f8fe4951.chunk.js",
+    "main.js.map": "/static/js/main.f8fe4951.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ba778294.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ba778294.js.map",
+    "static/js/2.3b294358.chunk.js": "/static/js/2.3b294358.chunk.js",
+    "static/js/2.3b294358.chunk.js.map": "/static/js/2.3b294358.chunk.js.map",
+    "static/js/3.00eeb985.chunk.js": "/static/js/3.00eeb985.chunk.js",
+    "static/js/3.00eeb985.chunk.js.map": "/static/js/3.00eeb985.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.44e526fc.chunk.css.map": "/static/css/main.44e526fc.chunk.css.map",
+    "static/js/2.3b294358.chunk.js.LICENSE.txt": "/static/js/2.3b294358.chunk.js.LICENSE.txt",
+    "static/media/DROGONLogo.9cdda6a4.jpg": "/static/media/DROGONLogo.9cdda6a4.jpg",
+    "static/media/contact_form_img_500x350.0850fcf7.png": "/static/media/contact_form_img_500x350.0850fcf7.png",
+    "static/media/donation.c91d76f6.png": "/static/media/donation.c91d76f6.png",
+    "static/media/info-logo1.736765fc.png": "/static/media/info-logo1.736765fc.png",
+    "static/media/App.css": "/static/media/wave1.2fc3a696.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba778294.js",
+    "static/js/2.3b294358.chunk.js",
+    "static/css/main.44e526fc.chunk.css",
+    "static/js/main.f8fe4951.chunk.js"
+  ]
+}
