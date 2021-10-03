@@ -8,9 +8,9 @@ const Donations = () =>
             <div className="card donation-card mt-3" style={{ borderRadius: '25px' }}>
                 <img src={donation} className="card-img-top" alt="..." style={{ borderRadius: '25px 0px 0px 25px' }} />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <h5 className="card-title">Acumen Fund</h5>
+                    <p className="card-text">We have donated 10000$ to acumen fund which is, a nonprofit impact investment fund, raises charitable donations to make equity investments in early-stage companies that provide a product or service to the poor. It invests across the agriculture, education, energy, and healthcare sectors in several geographies, including Latin America and the Caribbean, North America, South Asia, and sub-Saharan Africa</p>
+                    <a href="/" className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>

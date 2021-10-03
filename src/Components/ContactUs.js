@@ -28,9 +28,11 @@ const ContactUs = () =>
             <div className="container" >
                 <div className="row pb-5" style={{ paddingTop: "10%" }}>
                     <div className="col-md-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut velit rhoncus, vulputate ante sit
-                        amet, sollicitudin eros. Sed vitae nisl nibh. Cras interdum scelerisque massa. Aliquam erat volutpat.
-                        Nunc hendrerit vehicula sem, ac cursus lectus scelerisque id. Morbi non consectetur nibh.
+                    Extremely active community that loves our mission. Our
+discord channel is filled with community members 24/7 that would love to
+help you. Do not trust random messages of people claiming to be “support”
+or ever give out your wallet info to anyone.For more news regarding the
+‘DROGON’ token don’t forget to subscribe to our newsletter
                     </div>
                     <div className="col-md-6 mt-top">
                         <div className="card" style={{ boxShadow: "4px 7px 4px 4px grey", borderRadius: '15px' }}>
