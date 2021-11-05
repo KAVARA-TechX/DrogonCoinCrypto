@@ -20,15 +20,13 @@ const HeaderNav = () => {
             <Link className="nav-link active" aria-current="page" to="/ecosystem">Ecosystem</Link>
           </li>
           <li className="nav-item">
-          <a className="nav-link" href="https://kavara-techx.github.io/CryptoCurrencyProject/">Buy</a>
-          </li>
-          <li className="nav-item">
             <Link className="nav-link" to="/about-drogon">What is drogon ?</Link>
           </li>
         </ul>
         <div>
           <form className="d-flex">
-            <button className="button" type="submit"><a href="https://kavara-techx.github.io/CryptoCurrencyProject/" style={{textDecoration:'none'}}> Buy Now</a></button>
+            <button className="button" style={{marginRight:'15px'}} type="submit"><a href="https://kavara-techx.github.io/CryptoCurrencyProject/" style={{textDecoration:'none'}}> Buy Now</a></button>
+            <button className="button" type="submit"><Link to="/login" style={{textDecoration:'none'}}>Login</Link></button>
           </form>
         </div>
       </div>

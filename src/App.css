@@ -1,6 +1,6 @@
 /* Navigation */
 img.logo{
-  width: 154px;
+  width: 155px;
 }
 a.nav-link,.active{
   font-size: 20px;
@@ -269,6 +269,10 @@ img.contact{
   width: 100%;
 } 
 
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-left: 2.5rem;
+}
+
 /* Mobile View */
 @media(max-width: 991px){
   .parallelogram2{
@@ -367,3 +371,38 @@ img.contact{
 input:-ms-input-placeholder {
   color: #0AFFC5;
 } */
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+}
+
+/* tr:nth-child(even) {
+} */
+.fa-times-circle{
+  color: red;
+}
+
+.fa-check-circle{
+  color: green;
+}
+
+.canvasjs-chart-credit{
+  display: none;
+}
+
+.canvasjs-chart-canvas {
+  width: 100%;
+  height: 300px !important;
+}
+
+#canvasjs-react-chart-container-1636118802841{
+  width: 100%;
+  height: 300px !important;
+}
