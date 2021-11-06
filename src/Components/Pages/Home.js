@@ -6,28 +6,28 @@ import Rewards from '../Rewards';
 import Donations from '../Donations';
 import ContactUs from '../ContactUs';
 import Footer from '../Pages/Footer';
-const Home = () =>{
-    return(
+const Home = () => {
+    return (
         <div>
-            <HeaderNav/>
+            <HeaderNav />
 
-{/* INFO GRID */}
-<InfoGrid/>
+            {/* INFO GRID */}
+            <InfoGrid />
 
-{/* Social Media Icons */}
-<SocialMediaContainer/>
+            {/* Social Media Icons */}
+            <SocialMediaContainer />
 
-{/* Rewards */}
-<Rewards/>
+            {/* Rewards */}
+            <Rewards />
 
-{/* Donations */}
-<Donations/>
+            {/* Donations */}
+            <Donations />
 
-{/* Contact Us */}
-<ContactUs/>
+            {/* Contact Us */}
+            <ContactUs />
 
-{/* Footer */}
-<Footer/>
+            {/* Footer */}
+            <Footer />
         </div>
     );
 }

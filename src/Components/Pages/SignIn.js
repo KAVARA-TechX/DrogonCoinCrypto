@@ -23,7 +23,7 @@ const SignIn = () => {
                         <input className="form-control" style={{ margin: '0px' }} placeholder="Confirm Password" />
                         <br />
                         <button className="btn" style={{ backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)', 
-                        color: '#fff', display: 'block', width: '100%' }}>SIGN UP</button>
+                         display: 'block', width: '100%' }}>SIGN UP</button>
                     </div>
                     <div className="text-center mt-3">
                         Already have an account ? <Link to="/login">Login</Link>

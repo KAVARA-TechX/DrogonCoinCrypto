@@ -13,19 +13,19 @@ const Profile = () => {
             <div className="container" >
                 <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col-md-8">
-                        <div className="card">
+                        <div className="card clas">
                             <div className="card-body" style={{ padding: '30px' }}>
                                 <Tabs defaultActiveKey="1" onChange={callback} >
                                     <TabPane tab="PROFILE INFO" key="1">
                                         <table>
                                             <tr>
                                                 <td>
-                                                    <label>Full Name</label>
+                                                    <label className="ml">Full Name</label>
                                                     <br />
                                                     <input />
                                                 </td>
                                                 <td>
-                                                    <label>Email Address</label>
+                                                    <label className="ml">Email Address</label>
                                                     <br />
                                                     <input />
                                                 </td>
@@ -33,7 +33,7 @@ const Profile = () => {
                                             <br />
                                             <tr>
                                                 <td>
-                                                    <label>Nationality</label>
+                                                    <label className="ml">Nationality</label>
                                                     <select className="form-control">
                                                         <option>India</option>
                                                         <option>India</option>
@@ -42,7 +42,7 @@ const Profile = () => {
                                             </tr>
                                         </table>
                                         <br />
-                                        <button>Update Profile</button>
+                                        <button className="border-gradient border-gradient-green">Update Profile</button>
                                     </TabPane>
                                     <TabPane tab="SECURITY" key="2">
                                         <p>Security Settings</p>
@@ -55,19 +55,41 @@ const Profile = () => {
                                         </p>
                                         <br />
                                         <div className="d-flex">
-                                            <button>Enable 2FA</button>
-                                            <p style={{ marginLeft: 'auto' }}>CURRENT STATUS: <span>Disabled</span></p>
+                                            <button className="border-gradient border-gradient-green">Enable 2FA</button>
+                                            <p style={{ marginLeft: 'auto' }}>
+                                                CURRENT STATUS: <button disabled className="border-gradient border-gradient-green">Disabled</button></p>
                                         </div>
                                     </TabPane>
                                     <TabPane tab="CHANGE PASSWORD" key="3">
-                                        Content of Tab Pane 3
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label>Old Password</label>
+                                                    <input className="form-control"  />
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <br/>
+                                            <tr>
+                                                <td>
+                                                    <label>New Password</label>
+                                                    <input className="form-control" />
+                                                </td>
+                                                <td>
+                                                    <label>Confirm New Password</label>
+                                                    <input className="form-control" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br/>
+                                        <button className="border-gradient border-gradient-green">Submit</button>
                                     </TabPane>
                                 </Tabs>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="card">
+                        <div className="card clas">
                             <div className="card-header" style={{ border: 'none' }}>
                                 <p>DROGON</p>
                             </div>
@@ -92,17 +114,17 @@ const Profile = () => {
                     <div className="col-md-8">
                     </div>
                     <div className="col-md-4" style={{ marginBottom: '20px' }}>
-                        <div className="card">
-                            <div className="card-header" style={{border:'none'}}>
+                        <div className="card clas">
+                            <div className="card-header" style={{ border: 'none' }}>
                                 <p>Pre-Sale Token</p>
                             </div>
-                            <div className="card-body" style={{padding:'20px'}}>
+                            <div className="card-body" style={{ padding: '20px' }}>
                                 <p>DROGON TOKEN PRICE</p>
                                 <p>1 MATIC = 4567890877 DROGON</p>
-                                <br/>
+                                <br />
                                 <p>EXCHANGE RATE</p>
                                 <p>1 ETH = 4098765467 DROGON</p>
-                                <br/>
+                                <br />
                                 <p>CURRENT INVOICE BONUS</p>
                                 100%
                             </div>

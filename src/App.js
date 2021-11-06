@@ -10,6 +10,10 @@ import Dashboard from './Components/Pages/Dashboard';
 import 'antd/dist/antd.css';
 import Transactions from './Components/Pages/Transactions';
 import Profile from './Components/Pages/Profile';
+import Withdraw from './Components/Pages/Withdraw';
+import Records from './Components/Pages/Records';
+import Referral from './Components/Pages/Referral';
+import Activity from './Components/Pages/Activity';
 function App() {
   return (
     <div>
@@ -23,6 +27,10 @@ function App() {
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/transaction" component={Transactions} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/withdraw" component={Withdraw} />
+        <Route exact path="/records" component={Records} /> 
+        <Route exact path="/refer" component={Referral} />
+        <Route exact path="/activity" component={Activity} />
       </Switch>
     </div>
   );

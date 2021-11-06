@@ -7,12 +7,12 @@ const HeaderNav = () => {
       <div className="parallelogram2">
         <div className="unskew-nav">
           <img src={logo} className="logo" alt="Drogon" />
-          <Link style={{ fontSize: '42px', fontWeight: '400' }} className="navbar-brand" to="/">Drogon</Link>
+          <Link style={{ fontSize: '42px', fontWeight: '400', verticalAlign: 'middle' }} className="navbar-brand" to="/">Drogon</Link>
         </div>
       </div>
       <div className="parallelogram3"></div>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -22,11 +22,21 @@ const HeaderNav = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/about-drogon">What is drogon ?</Link>
           </li>
+          <li className="nav-item">
+            <a className="nav-link dHide" href="https://kavara-techx.github.io/CryptoCurrencyProject/" style={{ textDecoration: 'none' }}> Buy Now</a>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link dHide" to="/login" style={{ textDecoration: 'none' }}>Login</Link>
+          </li>
         </ul>
         <div>
-          <form className="d-flex">
-            <button className="button" style={{marginRight:'15px'}} type="submit"><a href="https://kavara-techx.github.io/CryptoCurrencyProject/" style={{textDecoration:'none'}}> Buy Now</a></button>
-            <button className="button" type="submit"><Link to="/login" style={{textDecoration:'none'}}>Login</Link></button>
+          <form className="mHide">
+            <button className="button" style={{ marginRight: '15px', borderRadius: '8px' }} type="submit">
+              <a href="https://kavara-techx.github.io/CryptoCurrencyProject/" style={{ textDecoration: 'none' }}> Buy Now</a>
+            </button>
+            <button className="button" style={{ borderRadius: '8px' }}>
+              <Link to="/login" style={{ textDecoration: 'none' }}>Login</Link>
+            </button>
           </form>
         </div>
       </div>

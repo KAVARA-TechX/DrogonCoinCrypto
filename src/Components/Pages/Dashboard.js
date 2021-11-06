@@ -39,8 +39,29 @@ const Dashboard = () => {
             <UserNav />
             <div className="container" style={{ marginTop: '20px', marginBottom: '20px' }}>
                 <div className="row">
-                    <div className="col-6 col-md-6">
-                        <div className="card">
+                    <div className="col-md-6">
+                        <div className="card clas" style={{overflowX:'auto'}}>
+                            <table>
+                                <tr>
+                                    <td style={{ borderRight: '1px solid black', width: '50%' }}>
+                                        <div style={{ marginLeft: '10px' }}>
+                                            <h4>DROGON BALANCE</h4>
+                                            <p>7984345678908</p>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style={{ marginLeft: '10px' }}>
+                                            <p >Token Name: Drogon</p>
+                                            <p>Tiker: DROGON</p>
+                                            <p>Price: 0.00001 USD</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        {/* <div className="card clas">
                             <table>
                                 <tr>
                                     <td>
@@ -55,42 +76,20 @@ const Dashboard = () => {
                                             <p>Tiker: DROGON</p>
                                             <p>Price: 0.00001 USD</p>
                                         </div>
-                                    </td>
-                                </tr>
-                            </table>
-
-                        </div>
-                    </div>
-                    <div className="col-6 col-md-6">
-                        <div className="card">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div style={{ marginLeft: '10px' }}>
-                                            <h4>DROGON BALANCE</h4>
-                                            <p>7984345678908</p>
-                                        </div>
-                                    </td>
-                                    <td >
-                                        <div style={{ marginLeft: '10px' }}>
-                                            <p >Token Name: Drogon</p>
-                                            <p>Tiker: DROGON</p>
-                                            <p>Price: 0.00001 USD</p>
-                                        </div>
 
                                     </td>
                                 </tr>
                             </table>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col-md-8">
-                        <div className="card">
+                        <div className="card clas">
                             <div className="card-header" style={{ border: 'none' }}>
                                 <h5>Transaction <Link style={{ float: 'right', textDecoration: 'none' }}>View All <em class="fas fa-angle-right"></em></Link></h5>
                             </div>
-                            <div className="card-body" style={{ paddingBottom: '32px' }}>
+                            <div className="card-body tTable" style={{ paddingBottom: '32px' }}>
                                 <table>
                                     <tr>
                                         <th>DROGON TOKENS</th>
@@ -108,14 +107,18 @@ const Dashboard = () => {
                                         <td><p><i class="far fa-check-circle fa-2x"></i> 98439482974879823.24</p></td>
                                         <td><p>0.1 BTC</p></td>
                                         <td><p>2021/10/19 17:00</p></td>
-                                        <td><button>Completed</button></td>
+                                        <td>
+                                                <button class="border-gradient border-gradient-green">
+                                                    Completed
+                                                </button>
+                                        </td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="card">
+                        <div className="card clas">
                             <div className="card-header" style={{ border: 'none' }}>
                                 <h4>Drogon</h4>
                             </div>
@@ -138,7 +141,7 @@ const Dashboard = () => {
                             <div style={{ marginLeft: '22px', marginBottom: '10px' }}>
                                 <p>=567890987654 Drogon</p>
                                 <p><i class="fa fa-info-circle" aria-hidden="true"></i> Amount calculated based current tokens price</p>
-                                <button>BUY TOKENS</button>
+                                <button className="border-gradient border-gradient-green">BUY TOKENS</button>
                             </div>
 
                         </div>
@@ -146,7 +149,7 @@ const Dashboard = () => {
                 </div>
                 <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col-md-8">
-                        <div className="card">
+                        <div className="card clas">
                             <div className="card-header" style={{ border: 'none' }}>
                                 <h5>DROGON SALE GRAPH</h5>
                             </div>
@@ -156,7 +159,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="card" style={{paddingTop:'32px'}}>
+                        <div className="card clas" style={{ paddingTop: '32px' }}>
                             <div className="card-header" style={{ border: 'none' }}>
                                 <h4>Drogon Sale Progress</h4>
                             </div>
@@ -165,18 +168,18 @@ const Dashboard = () => {
                                 <h5>234567898765 <span>Drogon</span></h5>
                                 <Slider defaultValue={99} disabled="true" />
                                 <h5>Sale Ends in </h5>
-                                <div className="row" style={{marginBottom:'50px',paddingBottom:'50px'}}>
+                                <div className="row" style={{ marginBottom: '50px', paddingBottom: '50px' }}>
                                     <div className="col-3">
-                                        <input value={'Day'} disabled style={{margin:'0px',padding:'0px',width:'100%',textAlign:'center'}}/>
+                                        <input value={'Day'} disabled style={{ margin: '0px', padding: '0px', width: '100%', textAlign: 'center' }} />
                                     </div>
                                     <div className="col-3">
-                                        <input value={'Hour'} disabled style={{margin:'0px',padding:'0px',width:'100%',textAlign:'center'}}/>
+                                        <input value={'Hour'} disabled style={{ margin: '0px', padding: '0px', width: '100%', textAlign: 'center' }} />
                                     </div>
                                     <div className="col-3">
-                                        <input value={'Min'} disabled style={{margin:'0px',padding:'0px',width:'100%',textAlign:'center'}}/>
+                                        <input value={'Min'} disabled style={{ margin: '0px', padding: '0px', width: '100%', textAlign: 'center' }} />
                                     </div>
                                     <div className="col-3">
-                                        <input value={'Sec'} disabled style={{margin:'0px',padding:'0px',width:'100%',textAlign:'center'}}/>
+                                        <input value={'Sec'} disabled style={{ margin: '0px', padding: '0px', width: '100%', textAlign: 'center' }} />
                                     </div>
                                 </div>
                             </div>

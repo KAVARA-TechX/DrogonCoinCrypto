@@ -10,11 +10,11 @@ const ContactUs = () =>
                 <div className="col-md-6 d-flex justify-content-center">
                     <div className="card contact-card" style={{ boxShadow: "4px 7px 4px 4px grey", borderRadius: '15px'}}>
                         <h4 className="text-center" style={{ color: '#1FFFCA', paddingTop: '10%', paddingBottom: '5%' }}>Contact Us</h4>
-                        <input type="text" placeholder="Full Name" />
+                        <input className="contact-input" type="text" placeholder="Full Name" />
                         <br />
-                        <input type="email" placeholder="E-Mail" style={{ marginTop: "8px" }} />
+                        <input className="contact-input" type="email" placeholder="E-Mail" style={{ marginTop: "8px" }} />
                         <br />
-                        <textarea placeholder="Message..." style={{ marginTop: "8px" }} />
+                        <textarea placeholder="Message..." style={{ marginTop: "8px",marginLeft:'20px',marginRight:'20px',padding:'10px' }} />
                         <br />
                         <div className="test">
                             <div style={{ float: 'right' }}>
@@ -36,7 +36,7 @@ or ever give out your wallet info to anyone.For more news regarding the
                     </div>
                     <div className="col-md-6 mt-top">
                         <div className="card" style={{ boxShadow: "4px 7px 4px 4px grey", borderRadius: '15px' }}>
-                            <h4 style={{ color: '#1FFFCA', marginLeft: '10px', marginTop: '10px' }}>Email Newsletter</h4>
+                            <h4 style={{ color: '#1FFFCA', marginLeft: '38px', marginTop: '10px' }}>Email Newsletter</h4>
                             <div style={{ paddingBottom: '15px' }}>
                                 <input type="email" className="subscribe" placeholder="Email Address..." style={{ marginTop: "8px", width: '60%' }} />
                                 <button className="flex p-1">Submit</button>

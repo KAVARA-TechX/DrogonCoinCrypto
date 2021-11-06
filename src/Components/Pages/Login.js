@@ -19,7 +19,7 @@ const Login = () => {
                         <br/>
                         <input className="form-control" style={{margin:'0px'}} placeholder="Password"/>
                         <br/>
-                        <button className="btn" style={{backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)',color:'#fff',display:'block',width:'100%'}}>SIGN IN</button>
+                        <button className="btn" style={{backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)',display:'block',width:'100%'}}>SIGN IN</button>
                     </div>
                 </div>
             </div>

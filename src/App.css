@@ -23,11 +23,32 @@ a.nav-link,.active{
   color: #fff;
 }
 a{
-  color: #000;
+  color: #000 !important;
 }
 .info{
   width: 100%;
   background-image: linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC);
+}
+
+button {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(to left, #00FE8B, #00FEAA,#00FFBC);
+}
+
+select:focus {
+  outline: none;
 }
 
 .test {
@@ -273,8 +294,36 @@ img.contact{
   padding-left: 2.5rem;
 }
 
+.usermenu{
+  padding-left: 25%;
+}
+
+.dHide{
+  display: none;
+}
+
+.ml{
+  margin-left: 15px;
+}
+
+.contact-input{
+  margin: 0px 20px;
+  padding: 7px;
+}
+.mHide{
+  display: flex;
+}
 /* Mobile View */
 @media(max-width: 991px){
+  .mHide{
+    display: none;
+  }
+  .ml{
+    margin-left: 0px;
+  }
+  .tTable{
+    overflow-x: auto;
+  }
   .parallelogram2{
     margin:0px;
   }
@@ -363,6 +412,18 @@ img.contact{
   .parallelogram3{
     height: 93px;
   }
+  .usermenu{
+    padding-left: 0px;
+  }
+  .dHide{
+    display: block;
+  }
+  .col-md-6{
+    margin-top: 20px;
+  }
+  .col-md-4{
+    margin-top: 20px;
+  }
 }
 /* input::placeholder { 
   color: #0AFFC5;
@@ -374,13 +435,14 @@ input:-ms-input-placeholder {
 
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
 }
 
 td, th {
   text-align: left;
+  padding: 8px;
 }
 
 /* tr:nth-child(even) {

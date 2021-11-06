@@ -18,7 +18,7 @@ const ForgotPassword = () => {
                         <input className="form-control" style={{ margin: '0px' }} placeholder="Email address" />
                         <br />
                         <button className="btn" style={{ backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)', 
-                        color: '#fff', display: 'block', width: '100%' }}>SUBMIT</button>
+                        display: 'block', width: '100%' }}>SUBMIT</button>
                     </div>
                     <div className="text-center mt-3">
                     Go To <Link to="/login" >Login</Link>

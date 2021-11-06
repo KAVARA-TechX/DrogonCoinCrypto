@@ -8,7 +8,7 @@ const Transactions = () => {
             <UserNav />
             <div className="container">
                 <div className="row" style={{ marginTop: "20px" }}>
-                    <div className="card">
+                    <div className="card clas">
                         <div className='card-header' style={{ border: 'none' }}>
                             User Transactions
                         </div>
@@ -57,12 +57,12 @@ const Transactions = () => {
                                         <p>USD <i class="fa fa-info-circle" aria-hidden="true"></i></p></td>
                                     <td><p>3G3noz6DhhgyQ39....</p>
                                         <p>2021/10/19 17:00</p></td>
-                                        <td><button>Completed</button></td>
+                                    <td><button className="border-gradient border-gradient-green">Completed</button></td>
                                 </tr>
                             </table>
                         </div>
                         <div className="card-footer" style={{ border: 'none' }}>
-                            <Pagination defaultCurrent={1} total={50} />
+                            <Pagination defaultCurrent={1} total={10} />
                         </div>
                     </div>
                 </div>
