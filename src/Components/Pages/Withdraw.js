@@ -63,7 +63,7 @@ const Withdraw = () => {
                 <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col-md-8">
                     </div>
-                    <div className="col-md-4" style={{ marginBottom: '20px', marginTop: '-265px' }}>
+                    <div className="col-md-4 mt" style={{ marginBottom: '20px'}}>
                         <div className="card clas">
                             <div className="card-header" style={{ border: 'none' }}>
                                 <p>Pre-Sale Token</p>

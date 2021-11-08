@@ -313,8 +313,15 @@ img.contact{
 .mHide{
   display: flex;
 }
+
+.mt{
+  margin-top: -265px;
+}
 /* Mobile View */
 @media(max-width: 991px){
+  .mt{
+    margin-top: 0px;
+  }
   .mHide{
     display: none;
   }

@@ -12,7 +12,7 @@ const Transactions = () => {
                         <div className='card-header' style={{ border: 'none' }}>
                             User Transactions
                         </div>
-                        <div className="card-body">
+                        <div className="card-body tTable">
                             <table>
                                 <tr>
                                     <th>TRANX NO</th>
