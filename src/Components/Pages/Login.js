@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ContactUs from "../ContactUs";
 import HeaderNav from "../Nav/HeaderNav";
 import Footer from "./Footer";
+import {getAuth,signInWithEmailAndPassword} from 'firebase/auth';
 const Login = () => {
+    const [email, setEmail] = useState();
+    const [pwd, setPwd] = useState();
+    const auth = getAuth();
+    const handleSignIn = () =>{
+        signInWithEmailAndPassword(auth,email,pwd)
+        .then((res)=>{
+            console.log(res);
+        })
+        .catch(err=>console.log(err));
+    }
     return (
         <>
         <HeaderNav/>
@@ -15,11 +26,13 @@ const Login = () => {
                     </div>
                     <div className="col-md-4">
                         <h4>Welcome back!</h4>
-                        <input className="form-control" style={{margin:'0px'}} placeholder="Email address"/>
+                        <input className="form-control" style={{margin:'0px'}} onChange={e=>setEmail(e.target.value)} placeholder="Email address"/>
                         <br/>
-                        <input className="form-control" style={{margin:'0px'}} placeholder="Password"/>
+                        <input className="form-control" style={{margin:'0px'}} onChange={e=>setPwd(e.target.value)} placeholder="Password"/>
                         <br/>
-                        <button className="btn" style={{backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)',display:'block',width:'100%'}}>SIGN IN</button>
+                        <button className="btn" style={{backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)',display:'block',width:'100%'}}
+                        onClick={handleSignIn}
+                        >SIGN IN</button>
                     </div>
                 </div>
             </div>

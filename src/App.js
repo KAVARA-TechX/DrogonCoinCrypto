@@ -14,6 +14,7 @@ import Withdraw from './Components/Pages/Withdraw';
 import Records from './Components/Pages/Records';
 import Referral from './Components/Pages/Referral';
 import Activity from './Components/Pages/Activity';
+import './firebase';
 function App() {
   return (
     <div>
