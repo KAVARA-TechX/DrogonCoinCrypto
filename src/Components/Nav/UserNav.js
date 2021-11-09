@@ -1,7 +1,28 @@
 import React from 'react';
 import logo from '../../DROGONLogo.jpg';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
+import { toast } from 'react-toastify';
 const UserNav = () => {
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const auth = getAuth();
+    const {user} = useSelector((state) => ({...state}));
+
+    const handleSignOut = () => {
+        console.log("Hello");
+        signOut(auth).then(() => {
+            dispatch({
+                type: 'LOGOUT',
+                payload: null
+            });
+            history.push('/');
+        }).catch((error) => {
+            toast.error(error.code);
+        });
+    }
     return (
         <>
             <nav className="navbar navbar-expand-lg" style={{ margin: '0px', padding: "0px 15px 0px 0px" }}>
@@ -22,12 +43,12 @@ const UserNav = () => {
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false"> Welcome! Randeep <i className="fa fa-user" aria-hidden="true"></i></a>
+                                aria-expanded="false"> Welcome! {user !== null ? user.name : ""} <i className="fa fa-user" aria-hidden="true"></i></a>
                             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item" to="/withdraw">Withdraw</Link></li>
                                 <li><Link className="dropdown-item" to="/activity">Activity</Link></li>
                                 <div class="dropdown-divider"></div>
-                                <li><p className="dropdown-item"><i class="fas fa-power-off"></i> Logout</p></li>
+                                <li><p className="dropdown-item" onClick={handleSignOut}><i class="fas fa-power-off"></i> Logout</p></li>
                             </ul>
                         </li>
                     </ul>
@@ -59,11 +80,11 @@ const UserNav = () => {
                             <Link className="nav-link dHide" to="/refer">Referral</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link dHide" to="/activity">Activity</Link>
+                            <Link className="nav-link dHide" to="/activity">Activity</Link>
                         </li>
                         <div class="dropdown-divider"></div>
                         <li className="nav-item">
-                            <a className="nav-link dHide" to="/records"><i class="fas fa-power-off"></i> Logout</a>
+                            <p className="nav-link dHide" onClick={handleSignOut} ><i class="fas fa-power-off"></i> Logout</p>
                         </li>
                     </ul>
                 </div>

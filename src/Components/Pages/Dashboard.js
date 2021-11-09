@@ -4,6 +4,8 @@ import UserNav from "../Nav/UserNav";
 import { CanvasJSChart } from 'canvasjs-react-charts';
 import { Slider } from 'antd';
 const Dashboard = () => {
+
+    //Options of chart
     const options = {
         animationEnabled: true,
         exportEnabled: false,
