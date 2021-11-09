@@ -17,30 +17,23 @@ const Profile = () => {
                             <div className="card-body" style={{ padding: '30px' }}>
                                 <Tabs defaultActiveKey="1" onChange={callback} >
                                     <TabPane tab="PROFILE INFO" key="1">
-                                        <table>
-                                            <tr>
-                                                <td>
-                                                    <label className="ml">Full Name</label>
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                            <label className="ml">Full Name</label>
                                                     <br />
                                                     <input />
-                                                </td>
-                                                <td>
-                                                    <label className="ml">Email Address</label>
+                                                </div>
+                                                <div className="col-md-6">
+                                                <label className="ml">Email Address</label>
                                                     <br />
                                                     <input />
-                                                </td>
-                                            </tr>
-                                            <br />
-                                            <tr>
-                                                <td>
+                                                </div>
+                                            </div>
                                                     <label className="ml">Nationality</label>
                                                     <select className="form-control">
                                                         <option>India</option>
                                                         <option>India</option>
                                                     </select>
-                                                </td>
-                                            </tr>
-                                        </table>
                                         <br />
                                         <button className="border-gradient border-gradient-green">Update Profile</button>
                                     </TabPane>

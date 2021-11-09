@@ -24,7 +24,7 @@ const Records = () => {
                                     <Radio value={2}>General Query</Radio>
                                 </Group>
                             </div>
-                            <div className="card-body">
+                            <div className="card-body tTable">
 
                                 {value === 1 ?
                                     <>
