@@ -11,7 +11,7 @@ const Ecosystem = () => {
         <div style={{ backgroundColor: '#FBFBFB' }}>
             <HeaderNav />
             <h4 className="text-center mt-1">Eco-friendly Drogon</h4>
-            <LottieAnimation lotti={home}  />
+            {/* <LottieAnimation lotti={home}  height="300px" width="100%"/> */}
             <div className="container " >
                 <div className="row ">
                     <div className="col-md-6" style={{ display: 'flex', alignItems: 'center' }}>

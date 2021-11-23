@@ -12,10 +12,10 @@ export const createOrUpdateUser = async (authtoken) => {
 };
 
 //we are using the below function to store usser without using the firebae middleware
-export const createUser = async (name,email) => {
+export const createUser = async (name, email) => {
     return await axios.post(
         `http://localhost:8000/api/create-user`,
-        {name,email},
+        { name, email },
         {
         }
     );
@@ -32,3 +32,16 @@ export const currentUser = async (authtoken) => {
         }
     );
 };
+
+export const createContact = async (authtoken,name,email,message) => {
+    return await axios.post
+        (
+            `http://localhost:8000/api/create-query`,
+            {name, email, message},
+            {
+                headers: {
+                    authtoken,
+                },
+            }
+        );
+}

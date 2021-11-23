@@ -21,7 +21,7 @@ const Home = () => {
             <Rewards />
 
             {/* Donations */}
-            <Donations />
+            {/* <Donations /> */}
 
             {/* Contact Us */}
             <ContactUs />

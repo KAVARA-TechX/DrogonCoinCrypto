@@ -59,8 +59,6 @@ const Login = ({history}) => {
                         To create new account, Please <Link to="/create-account">Sign up</Link>
                     </div>
                 </div>
-                <ContactUs />
-                <Footer />
             </>
 
         );
