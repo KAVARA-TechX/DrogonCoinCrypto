@@ -253,10 +253,19 @@ button.flex.p-1{
 .bgImage
 {
   background: url("./bg-Image.png");
+  background-size: cover;
+  height: 770px;
+}
+.sd{
+  margin-top: 10%;
 }
 .circular{
   border-radius: 50%;
   padding: 25px;
+}
+.circularImg{
+  height: 90px;
+  width: 90px;
 }
 
 @keyframes example {
@@ -286,6 +295,7 @@ button.flex.p-1{
 }
 
 @keyframes shake {
+  
   0% { transform: translate(0px, 0px) }
   50% { transform: translate(0px, -25px) }
    100% { transform: translate(0px, 0px) }
@@ -346,6 +356,21 @@ img.contact{
 }
 /* Mobile View */
 @media(max-width: 991px){
+  .bgImage
+  {
+    height: 100%;
+  }
+  .centerContent
+  {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .circular
+  {
+    width: 60%;
+  }
   .mt{
     margin-top: 0px;
   }
