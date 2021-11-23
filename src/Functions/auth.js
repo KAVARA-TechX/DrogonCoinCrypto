@@ -1,7 +1,7 @@
 import axios from "axios";
 export const createOrUpdateUser = async (authtoken) => {
     return await axios.post(
-        `http://localhost:8000/api/create-or-update-user`,
+        `https://drogoncoin.herokuapp.com/api/create-or-update-user`,
         {},
         {
             headers: {
@@ -14,7 +14,7 @@ export const createOrUpdateUser = async (authtoken) => {
 //we are using the below function to store usser without using the firebae middleware
 export const createUser = async (name, email) => {
     return await axios.post(
-        `http://localhost:8000/api/create-user`,
+        `https://drogoncoin.herokuapp.com/api/create-user`,
         { name, email },
         {
         }
@@ -23,7 +23,7 @@ export const createUser = async (name, email) => {
 
 export const currentUser = async (authtoken) => {
     return await axios.post(
-        `http://localhost:8000/api/current-user`,
+        `https://drogoncoin.herokuapp.com/api/current-user`,
         {},
         {
             headers: {
@@ -36,7 +36,7 @@ export const currentUser = async (authtoken) => {
 export const createContact = async (authtoken,name,email,message) => {
     return await axios.post
         (
-            `http://localhost:8000/api/create-query`,
+            `https://drogoncoin.herokuapp.com/api/create-query`,
             {name, email, message},
             {
                 headers: {

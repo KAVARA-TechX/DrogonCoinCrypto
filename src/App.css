@@ -1,4 +1,7 @@
 /* Navigation */
+body{
+  font-family: 'Ubuntu', sans-serif !important;
+}
 img.logo{
   width: 155px;
 }
@@ -247,6 +250,15 @@ button.flex.p-1{
   margin-bottom: 45px;
 }
 
+.bgImage
+{
+  background: url("./bg-Image.png");
+}
+.circular{
+  border-radius: 50%;
+  padding: 25px;
+}
+
 @keyframes example {
   /* 0%{
     transform: scale(1,1);
@@ -277,13 +289,28 @@ button.flex.p-1{
   0% { transform: translate(0px, 0px) }
   50% { transform: translate(0px, -25px) }
    100% { transform: translate(0px, 0px) }
+}
 
-
+@keyframes shake1 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0px, 25px) }
+   100% { transform: translate(0px, 0px) }
 }
 
 img.w-100.info-img{
   animation: shake 3s infinite;
 }
+
+.circularImgAnimation
+{
+  animation: shake 3s infinite;
+}
+
+.circularImgAnimation1
+{
+  animation: shake1 3s infinite;
+}
+
 
 img.contact{
   height: 300px;

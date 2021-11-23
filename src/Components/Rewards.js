@@ -10,7 +10,7 @@ const Rewards = () =>
         <h1 style={{ color: "#06FFC4" }}>Drogon</h1>
         <h1>Rewards in your Wallet</h1>
         <br />
-        <p>Drogon , the coin” has placed its bigfoot and is ready to set things on
+        <p style={{fontFamily:'cursive'}}>Drogon , the coin” has placed its bigfoot and is ready to set things on
 fire in the Crypto world. He has finally decided to join the game and to make sure its
 owners reside on the top of the throne. Drogon is a BEP-20 Token which has its
 smart contract deployed on Binance Smart Chain. Binance Smart Chain offers low
