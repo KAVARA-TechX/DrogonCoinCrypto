@@ -33,6 +33,9 @@ const Login = ({history}) => {
                     }).catch();
                 }).catch(err => toast.error(err.code));
             }
+            const handleChange= (e) =>{
+                console.log(e.target.value);
+            }
     return (
             <>
                 <HeaderNav />
@@ -51,6 +54,12 @@ const Login = ({history}) => {
                                 <button className="btn" style={{ backgroundImage: 'linear-gradient(to bottom left, #00FE8B, #00FEAA,#00FFBC)', display: 'block', width: '100%' }}
                                     onClick={handleSignIn}
                                 >SIGN IN</button>
+                                <br/>
+                                <select className="form-control" onChange={handleChange}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
                             </div>
                         </div>
                     </div>
